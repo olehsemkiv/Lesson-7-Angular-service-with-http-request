@@ -1,0 +1,47 @@
+<div class="container">
+  <form>
+    <div class="mb-3">
+      <input [(ngModel)]="newTitle" name="newTitle" placeholder="title here..." type="text" class="form-control">
+    </div>
+    <div class="form-floating mb-3">
+      <textarea [(ngModel)]="newText" name="newText" class="form-control" id="floatingTextarea"></textarea>
+      <label for="floatingTextarea">Text here...</label>
+    </div>
+    <div class="mb-3">
+      <input [(ngModel)]="newAuthor" name="newAuthor" placeholder="author here..." type="text" class="form-control"
+        id="exampleInputPassword1">
+    </div>
+
+    <button *ngIf="!editStatus" (click)="addItem()" [disabled]="!newTitle || !newText || !newAuthor" type="button"
+      class="btn btn-success">Add</button>
+    <button *ngIf="editStatus" [disabled]="!newTitle || !newText || !newAuthor" type="button" (click)="updateItem()"
+      class="btn btn-primary">Save</button>
+  </form>
+
+  <div class="container mt-3">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Title</th>
+          <th scope="col">Text</th>
+          <th scope="col">Author</th>
+          <th scope="col">Edit</th>
+          <th scope="col">Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let post of postsAdmin; index as i;">
+          <th scope="row">{{i+1}}</th>
+
+          <td>{{post.title}}</td>
+          <td>{{post.text}}</td>
+          <td>{{post.author}}</td>
+          <td><button (click)="editItem(post)" type="button" class="btn btn-warning">Edit</button></td>
+          <td><button (click)="deleteItem(post)" type="button" class="btn btn-danger" [disabled]="editStatus">Delete</button></td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+{
+  "posts": [
+    {
+      "title": "Title 1",
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dicta sint repudiandae, dolorem, eum minima incidunt id\npossimus asperiores non magnam, voluptas qui voluptatum suscipit! Necessitatibus deleniti quis ipsum tenetur!\n",
+      "author": "Author 1",
+      "id": 1
+    },
+    {
+      "title": "Title 2",
+      "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem quisquam reprehenderit excepturi! Recusandae hic,\nnostrum vitae facilis commodi dolorem in vero reiciendis obcaecati debitis quam pariatur labore ratione est eaque!",
+      "author": "Author 2",
+      "id": 2
+    },
+    {
+      "title": "Title 3",
+      "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem illo, commodi sequi nam soluta distinctio dolor atque\nvelit vero earum porro numquam quas quibusdam cupiditate at incidunt dignissimos. Mollitia, quasi.",
+      "author": "Author 3",
+      "id": 3
+    },
+    {
+      "title": "Title 4",
+      "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, atque magnam sit nulla consequatur ipsam,\nvoluptate labore officia enim, rerum quas vel repellendus quaerat placeat quod? \n",
+      "author": "Author 4",
+      "id": 4
+    }
+  ]
+}

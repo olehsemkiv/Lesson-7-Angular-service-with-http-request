@@ -1,0 +1,12 @@
+<div class="container d-flex flex-wrap">
+  <div *ngFor="let post of postsUser" class="card mx-2 my-2" style="width: 18rem;">
+    <img src="https://i.pinimg.com/564x/7e/1b/c5/7e1bc5afc3fe3cdebaefd90e7dc8fbcc.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h6 class="card-subtitle mb-2 text-muted">{{post.author}}</h6>
+      <h5 class="card-title">{{post.title}}</h5>
+      <p class="card-text">{{post.text}}</p>
+    </div>
+  </div>
+
+</div>
+
